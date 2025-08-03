@@ -1,7 +1,7 @@
 - name: To run our custom microservice we need dot service file
   ansible.builtin.template:    # <--- not copy:
-    src: catalogue.service.j2   # <-- {.j2 } means this guys are follwing Jinja2 format template to understand anyone.
-    dest: /etc/systemd/system/catalogue.service.j2 
+    src: "{{ component }}.service.j2"  # <-- {.j2 } means this guys are follwing Jinja2 format template to understand anyone.
+    dest: /etc/systemd/system/"{{ component }}.service.j2" 
 
 - name: Running the daemon reload because when ever we are making any change's in systemd folder 
   ansible.builtin.systemd_service:
