@@ -10,7 +10,7 @@
 #     state: present
 
 
-- name: nodejs and dependencies 
+- name: Downloading nodejs version and dependencies 
   ansible.builtin.include_role:
     name: common 
     tasks_from: nodejs
@@ -74,10 +74,6 @@
 #     name: catalogue
 #     state: started
 
-- name: systemd setup
-  ansible.builtin.include_role:
-    name: common 
-    tasks_from: systemd
 
 - name: copy mongodb repo
   ansible.builtin.copy:
@@ -101,3 +97,9 @@
 - name: load products
   ansible.builtin.shell: mongosh --host mongodb.kalyanu.xyz < /app/db/master-data.js
   when: catalogue_output.stdout | int < 0
+
+
+- name: systemd setup
+  ansible.builtin.include_role:
+    name: common 
+    tasks_from: systemd
