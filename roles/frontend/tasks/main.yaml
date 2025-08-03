@@ -49,5 +49,5 @@
   ansible.builtin.template:   # <-- not copy:
     src: nginx.conf.j2            #  <--- Don't forget to keep this { .j2 }
     dest: /etc/nginx/nginx.conf.j2
-  notify:
-    - Restart nginx  # <-- Capital (R) and name as to be same in handlers as well.
+  notify:                        # notify chestunnam manam, if we change anthing in nginx.conf lo appude restart chey
+    - Restart nginx           # <-- Capital (R) and name as to be same in handlers as well.
