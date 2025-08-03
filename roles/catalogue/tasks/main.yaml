@@ -55,24 +55,29 @@
     tasks_from: app-setup
 
 
-- name: To run our custom microservice we need dot service file
-  ansible.builtin.copy:
-    src: catalogue.service
-    dest: /etc/systemd/system/catalogue.service  
+# - name: To run our custom microservice we need dot service file
+#   ansible.builtin.copy:
+#     src: catalogue.service
+#     dest: /etc/systemd/system/catalogue.service  
 
-- name: Running the daemon reload because when ever we are making any change's in systemd folder 
-  ansible.builtin.systemd_service:
-    daemon_reload: true
+# - name: Running the daemon reload because when ever we are making any change's in systemd folder 
+#   ansible.builtin.systemd_service:
+#     daemon_reload: true
 
-- name: Enable catalogue
-  ansible.builtin.service:
-    name: catalogue
-    enabled: yes
+# - name: Enable catalogue
+#   ansible.builtin.service:
+#     name: catalogue
+#     enabled: yes
 
-- name: start catalogue
-  ansible.builtin.service:
-    name: catalogue
-    state: started
+# - name: start catalogue
+#   ansible.builtin.service:
+#     name: catalogue
+#     state: started
+
+- name: systemd setup
+  ansible.builtin.include_role:
+    name: common 
+    tasks_from: systemd
 
 - name: copy mongodb repo
   ansible.builtin.copy:
