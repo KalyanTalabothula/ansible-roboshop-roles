@@ -3,6 +3,8 @@
 
 
 - name: stop the server
+  tags:
+  - deployment
   ansible.builtin.service:
     name: "{{ component }}"
     state: stopped
