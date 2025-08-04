@@ -99,6 +99,7 @@ vault/*.yaml
 # ans: we were using ansible vault, but there are challenges to maintain the passwords and vault files, so  I recently proposed SSM Parameter store, I did POC { Proof of Concept }and removed vault and implemented SSM paramater store successfully.
 
 
+# vallu generlly vallu Ansible Vault adugutaru, miru adi chepputuney edi kuda cheppite you are the smart right, you are giving more deapth information right.
 
 
 
