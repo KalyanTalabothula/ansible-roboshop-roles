@@ -39,4 +39,19 @@ vault/*.yaml
 
 # ansible-playbook -i inventory.ini mysql.yaml -e "component=mysql"
 # ERROR! Attempting to decrypt but no vault secret found,  ani vastumdhi. 
-# so edi yemi chepputumdi, miru ichharu vars, nenu e vault lopalaki velli mysql.yaml loki velli 
+# so edi yemi chepputumdi, miru ichharu vars, nenu e vault lopalaki velli mysql.yaml loki velli chustunna, i found nothing ani error chuspistumdhii. 
+
+# so lekapote adugu ani 
+# ansible-playbook -i inventory.ini mysql.yaml -e "component=mysql" --ask-vault-pass
+# ani echhaka ela adugutumdhi
+# Vault password: admin123
+
+# now it is running, because you know password to decrypt. so ee roles lo unde vars lo confidetional evi yemi pettakudadu. so password kachhitam gha vault lo ney pettali.
+
+# that is about Vault. 
+
+
+# Interview lo adugutaru, miru ansible lo vault use cheysara ani??? 
+
+# 
+
