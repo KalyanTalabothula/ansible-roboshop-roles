@@ -53,5 +53,44 @@ vault/*.yaml
 
 # Interview lo adugutaru, miru ansible lo vault use cheysara ani??? 
 
-# 
+# yes. we used ansible Vault, we are storing our mysql username and password in our Vault, and we give the decryption password at the command line.
+
+# how do create vault file??  --->  ansible-vault create <file-name>
+
+# so manam server loney manam mentioned cheysam, so github lo push cheyatamledu, so excute aayyedhi yekkada ite akkada unte chalu kada so mysql yekkada excute avutumdhi ansible lo excute avutumdhi, so ansible lo adi undhi but we are gitignore it, we don't won't to store in side github.
+
+# so E vault kuda manage cheyatam kuda kumchum kastamegha, ela GitHub lo pettakunda server lo create chesukuntu aa password anevi echhukuntu .... 
+
+# so manaki vere option undhi That is SSM Paramater store.
+
+
+
+
+# So AWS ni yemi antaru server or Platform antara ???
+
+# Eppudu Linux ni --> server ani antanu  ala ney Ansible --> Platform
+
+# Training -- ante only giving classes      Join DevOps is Platform--> training tho patu extrafeature istam so that is called platform. like.. slack team, Q/A team, job portal, LinkedIn videos, Interviews, Mocks...
+
+# so Eppudu AWS ni yendhuku Platform yendhuku antaru...?
+
+
+# Eppudu servers ki passwords kavali, aa passwords ni yela manage cheysukovali? dhani kosam malli separete gha HARSHICROP, VAULt ani ...
+
+# so nenu Harshicrop ni --> Install,manage, update, upgrade
+
+# dhani tarawata e linux/ansible ni integrate with vault software. so edi anta tough kada little bit. 
+# so manam 3rd party software tisukunte vatini Install, manage, upgrade, update, chesukovali ala ney mana current vatitho integrae chesukovali....
+
+# so AWS yemi chesyimdhi.. it has a list of services like DB,server,DNS, NETWORK viti annitin tisukoni vachhi oka chota pettimfhi.
+
+# ekkada nenu password ni store cheysuskotaniki vere chostaki vellakkaraledu, ekkada SSM Paramaters ani untadhi.
+
+# System manager loki velte andhulo paramater store ani untadhi.
+# ante ekkda manam konni screate tho store chesukovachhu. 
+
+# ala ney / tho store cheyamantadhi to understand project.
+
+
+
 
