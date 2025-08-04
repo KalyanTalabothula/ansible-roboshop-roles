@@ -1,0 +1,9 @@
+
+# 🔍 ansible ssm parameter
+
+# - name: Lookup ssm parameter store in specified region
+# ansible.builtin.debug: msg="{{ lookup('amazon.aws.aws_ssm', 'Hello', region='us-east-2' ) }}"
+
+MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/mysql/mysql_root_password', region='us-east-1', decrypt=True ) }}"
+
+# so now we push in to GitHub, it is perfectly safe. 
