@@ -1,0 +1,36 @@
+vault/*.yaml
+
+# ansible-vault create <file-name>
+
+# New Vault password: admin123
+# Confirm New Vault password: admin123
+
+# cat <file-name>
+
+# 123142343232543253425345 yevari daggara password untumdho vallu chudachhu 
+
+# ansible-vault view <file-name>
+
+# Vault password: admin123
+#  now you can see that, whats there in like any test 
+
+# To edit ansible-vault edit <file-name>
+# asking Vault password: admin123
+
+
+# so Vault ane dhanni GitHub loki push cheyatam safe or not ?? 
+# even encripted ina, obviosly safe, but not recommeded to push to Git. so appudu nenu yemi cheyali .gitignore ane file create chesi andulo { vault/*.yaml } ani petti, generally indhulo kuda yemi push avvadu, nenu e passwords ni yekkada pettali, ekkada server lo pettali, git push chesi nappudu Vault ane folder radu. so server lopala create chesukovali. 
+
+# mkdir vault
+# cd vault/
+# ansible-vault create mysql.yaml ani estunna
+# now it asking New Vault password: admin123 ani estunna, miru secure password pettukuntaru obviosuly. 
+# confirm New Vault password : admin123
+
+# MYSQL_ROOT_PASSWORD: RoboShop@1
+# :wq!
+# so ekkda yemi mentioned chesta ante mysql.yaml lo 
+# vars_files: 
+# - vault/mysql.yaml 
+
+# Acutally manaki passwords unnavi yenti Mysql, rabbitmq... so manam git lo pettakudadhu adi secure kadu so manam ela Vault ane folder roles create chesukoni chestam. 
