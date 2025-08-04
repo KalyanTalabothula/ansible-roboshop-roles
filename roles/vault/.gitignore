@@ -92,5 +92,14 @@ vault/*.yaml
 # ala ney / tho store cheyamantadhi to understand project.
 
 
+# Finally SSM parameter store. 
+
+# QUESTION: recently miru chesina improvement yenti mee project lo ????? thsee are senario questions
+
+# ans: we were using ansible vault, but there are challenges to maintain the passwords and vault files, so  I recently proposed SSM Parameter store, I did POC { Proof of Concept }and removed vault and implemented SSM paramater store successfully.
+
+
+
+
 
 
