@@ -102,5 +102,12 @@ vault/*.yaml
 # vallu generlly vallu Ansible Vault adugutaru, miru adi chepputuney edi kuda cheppite you are the smart right, you are giving more deapth information right.
 
 
+# QUESTION: now they ask, hoe do you created SSM Paramater ???
+
+# Answer: We created, Screates in SSM paramater store and i used to lookup plaguein, we are able to get passwords through ansible to install boto3 and botocore and python packages for ansible then we were able to featch it. 
+
+
+
+
 
 
