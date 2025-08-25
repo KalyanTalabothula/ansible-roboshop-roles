@@ -16,10 +16,10 @@
 - name: install boto3 and botocore
   ansible.builtin.pip:
     name: "{{ item }}"
-  executable: pip3.9
+    executable: pip3.9
   loops:
-  - boto3
-  - botocore
+    - boto3
+    - botocore
 
 # this is download in ansible server or mysql server????  --> mysql server only right
 # Password ni tisuku ravalisimdi yevaru ??  --> ansible server
