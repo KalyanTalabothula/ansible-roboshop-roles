@@ -106,7 +106,7 @@
 - name: systemd setup
   include_role:
     name: common 
-    tasks_from: systemd  # <-- systemd.yaml
+    tasks_from: systemd.yaml  # <-- systemd.yaml
 
 # - name: deployement
 #   tags:
